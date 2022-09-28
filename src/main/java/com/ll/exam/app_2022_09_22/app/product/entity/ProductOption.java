@@ -33,6 +33,7 @@ public class ProductOption extends BaseEntity {
     private int stockQuantity; // 쇼핑몰에서 보유한 물건 개수
 
     public ProductOption(String color, String size) {
+        this.color = color;
         this.displayColor = color;
         this.size = size;
         this.displaySize = size;

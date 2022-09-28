@@ -1,12 +1,9 @@
 spring:
-  profile:
+  profiles:
     active: dev
-  output:
-    ansi:
-      enabled: always
   batch:
     job:
-      names: ${job.name:helloWorldJob,withParamJob}
+      names: ${job.name:NONE}
     jdbc:
       initialize-schema: ALWAYS
   datasource:
@@ -18,6 +15,6 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: create
-  logging:
-    level:
-      com.ll.exam.app_2022_09_22: debug
+logging:
+  level:
+    com.ll.exam.app_2022_09_22: debug

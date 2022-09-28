@@ -49,6 +49,4 @@ public class WithParamJobConfig {
             return RepeatStatus.FINISHED;
         };
     }
-
-
 }
